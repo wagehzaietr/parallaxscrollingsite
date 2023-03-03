@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(rgb(71, 2, 62),rgb(44, 30, 121));
+    height: 100vh;
+    font-family: system-ui,;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    position: fixed;
+    width: 95%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
+
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li{
+    margin: 1px;
+    padding-right: 3px;
+}
+
+header ul li a{
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+header ul li a:hover, .active{
+    background: white;
+    color: blueviolet;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top,#200016,transparent);
+}
+
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(80px)
+}
+
+#wageh{
+    color: white;
+    font-size: 25px;
+    transform: translateY(-140px);
+
+}
+
+.content{
+    color: white;
+    padding: 30px;
+
+}
+
+.content h2{
+    margin: 20px;
+    font-size: 30px;
+}
+
+.content p{
+    margin: 20px;
+
+}
+
+.video-section {
+    display: flex; /* using flexbox */
+    align-items: center; /* center the videos vertically */
+    justify-content: space-between;
+    border-radius: 25px;
+    background: linear-gradient(to top,#200016,transparent);
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .video-box {
+    border: 1px solid rgb(0, 0, 0); /* adding a black border */
+    width: 30%; /* each video-box takes 30% of the width */
+    margin: 0 auto; /* center the video-box horizontally */
+  }
+  
+  .left {
+    /* align the left video-box to the left */
+    align-self: flex-start;
+    padding: 25px;
+  }
+  
+  .center {
+    /* align the center video-box to the center */
+    align-self: center;
+    padding: 25px;
+  }
+  
+  .right {
+    /* align the right video-box to the right */
+    align-self: flex-end;
+    padding: 25px;
+  }
+  
+  video {
+    width: 100%; /* make the video take the full width of the video-box */
+  }
+  .content .myv{
+    display: flex;
+    font-weight: 700;
+    color: #200016;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #myv{
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }  
+
+  #myv:hover{
+    transform: scale(1.2);
+  }
+
+  header img{
+    display: flex;
+    justify-content: left;
+    padding-right: 750px;
+    padding-bottom: 15px;
+  }
+
+  @media only screen and (max-width:445px){
+    html{
+      width: 100%;
+    }
+      }
+      @media only screen and (max-width:445px){
+        body{
+          width: 100%;
+        }
+          }
+
+    @media only screen and (max-width:800px){
+      html{
+        width: 100%;
+      }
+    }
+    
+    @media only screen and (max-width:1366px){
+    /* all css here goes for screens with 1366px */
+    }
